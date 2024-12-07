@@ -2,12 +2,12 @@ import Home from './pages/Home';
 import './styles/App.css';
 
 function App() {
-  return <div>
-    <nav className='bg-slate-300 text-center text-2xl cursor-pointer' >
-      Contact App
-    </nav>
-    <Home/>
-  </div>;
+  return (
+    <div className="flex flex-col">
+    
+      <Home className="flex-grow"/>
+    </div>
+  );
 }
 
 export default App;

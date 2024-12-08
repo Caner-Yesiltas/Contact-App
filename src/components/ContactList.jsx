@@ -1,4 +1,5 @@
-import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPenNib, faTrash } from '@fortawesome/free-solid-svg-icons';
 
 const ContactList = () => {
   return (
@@ -33,9 +34,9 @@ const ContactList = () => {
             <td className="p-1">department</td>
             <td className="">phone</td>
             <td className="p-1">
-              <i className="fa-solid fa-pen-nib text-2xl text-blue-300 pr-3 cursor-pointer"></i>
-              <i className="fa-solid fa-trash text-2xl text-red-800 cursor-pointer"></i>
-            </td>
+                <FontAwesomeIcon icon={faPenNib} className="text-2xl text-blue-300 pr-3 cursor-pointer" />
+                <FontAwesomeIcon icon={faTrash} className="text-2xl text-red-800 cursor-pointer" />
+              </td>
           </tr>
         </tbody>
       </table>

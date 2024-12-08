@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const ContactList = ({ contacts }) => {
+const ContactList = ({ contacts, handleDelete, id }) => {
   return (
     <div className='w-full lg:w-6/12 p-5 mt-5 bg-white bg-opacity-50 mx-auto shadow-lg rounded-lg '>
       <table className='w-full text-sm text-gray-500'>
@@ -23,15 +23,18 @@ const ContactList = ({ contacts }) => {
         </thead>
         <tbody id='tbody'>
           {contacts.map((item) => {
-            const { firstName, lastName, email, department, phone } = item;
+            const { firstName, lastName, email, department, phone, id } = item;
             return (
-              <tr className='bg-white border-b bg-opacity-80 text-center hover:bg-gray-50'>
+              <tr
+                className='bg-white border-b bg-opacity-80 text-center hover:bg-gray-50'
+                key={item.id}
+              >
                 <th className='flex items-center p-1 font-medium text-gray-900 whitespace-nowrap'>
                   <div className='text-center w-full'>
                     <div className='text-base font-semibold'>
                       {firstName} {lastName}
                     </div>
-                    <div className='font-normal text-gray-500'>email</div>
+                    <div className='font-normal text-gray-500'>{email}</div>
                   </div>
                 </th>
                 <td className='p-1'>{department}</td>
@@ -44,6 +47,7 @@ const ContactList = ({ contacts }) => {
                   <FontAwesomeIcon
                     icon={faTrash}
                     className='text-2xl text-red-800 cursor-pointer'
+                    onClick={() => handleDelete(id)}
                   />
                 </td>
               </tr>

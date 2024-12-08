@@ -18,12 +18,18 @@ const Home = () => {
 const handleSubmit = (e) => {
   e.preventDefault();
   setContacts([...contacts, {...info, id:new Date().getTime()} ])
+  setInfo(initialState);
 }
+
+const handleDelete= (id) => {
+  setContacts(contacts.filter(item=> item.id !== id))
+}
+
 
   return(
     <div className='block lg:flex p-3 gap-4' >
      <ContactForm info={info} setInfo={setInfo} handleSubmit={handleSubmit} />
-     <ContactList contacts={contacts}  />
+     <ContactList contacts={contacts} handleDelete={handleDelete}  />
     </div>
   )
 }

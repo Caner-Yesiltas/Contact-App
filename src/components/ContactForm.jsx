@@ -1,4 +1,5 @@
 import React from 'react';
+import InputMask from 'react-input-mask';
 
 const ContactForm = ({ info, setInfo, handleSubmit }) => {
   const handleChange = (e) => {
@@ -102,6 +103,15 @@ const ContactForm = ({ info, setInfo, handleSubmit }) => {
           />
         </div>
       </div>
+      <InputMask  mask="+1\ 999 99 99" maskChar="_"
+       type='tel'
+       id='phone'
+       name='phone'
+       className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5'
+       placeholder='+90 (555)-555-5555'
+       value={info.phone}
+       onChange={handleChange}
+       required />
       <div className='flex justify-center mt-6'>
         <button
           type='submit'

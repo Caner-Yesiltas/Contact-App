@@ -26,7 +26,7 @@ Contact App is a modern contact management application built with React. It allo
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Font Awesome](https://fontawesome.com/)
-- [react-input-mask](https://github.com/sanniassin/react-input-mask)
+- [React-Input-Mask](https://github.com/sanniassin/react-input-mask)
 
 ## 🚀 Getting Started
 

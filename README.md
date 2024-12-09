@@ -48,14 +48,14 @@ npm start
 
 src/
 ├── components/
-│   ├── ContactForm/     # Contact form component
-│   └── ContactList/     # Contact list component  
+│   ├── ContactForm/   # Contact form component
+│   ├── ContactList/   # Contact list component
 ├── pages/
-│   └── Home/            # Home page component
+│   ├── Home/          # Home page component
 ├── styles/
-│   └── App.css          # Main styling
-├── App.js               # Main application component
-└── index.js             # Entry point
+│   └── App.css        # Main styling
+├── App.js             # Main application component
+└── index.js           # Entry point
 
 
 ## 🔍 Core Functionality

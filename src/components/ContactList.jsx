@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPenNib, faTrash } from '@fortawesome/free-solid-svg-icons';
 
-const ContactList = ({ contacts, handleDelete, id }) => {
+const ContactList = ({ contacts, handleDelete, id, setInfo }) => {
   return (
     <div className='w-full lg:w-6/12 p-5 mt-5 bg-white bg-opacity-50 mx-auto shadow-lg rounded-lg '>
       <table className='w-full text-sm text-gray-500'>
@@ -43,6 +43,8 @@ const ContactList = ({ contacts, handleDelete, id }) => {
                   <FontAwesomeIcon
                     icon={faPenNib}
                     className='text-2xl text-blue-300 pr-3 cursor-pointer'
+                    onClick={()=> setInfo(item)} //ContactList'teki bir öğeye tıklanınca, o öğenin verilerini setInfo ile ContactForm'a göndererek formu güncelledim.
+
                   />
                   <FontAwesomeIcon
                     icon={faTrash}

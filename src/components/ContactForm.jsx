@@ -1,13 +1,15 @@
 import React from 'react';
 
-const ContactForm = ({info, setInfo, handleSubmit}) => {
-  const handleChange= (e) => {
+const ContactForm = ({ info, setInfo, handleSubmit }) => {
+  const handleChange = (e) => {
     console.log(e.target.name);
-    setInfo({...info, [e.target.name]:e.target.value })
-    
-  }
+    setInfo({ ...info, [e.target.name]: e.target.value });
+  };
   return (
-    <form className='w-full lg:w-4/12 m-5 border-gray-300 bg-white bg-opacity-50 rounded-lg shadow-lg mx-auto' onSubmit={handleSubmit} >
+    <form
+      className='w-full lg:w-4/12 m-5 border-gray-300 bg-white bg-opacity-50 rounded-lg shadow-lg mx-auto'
+      onSubmit={handleSubmit}
+    >
       <div className='grid gap-6 mb-6 md:grid-cols-2'>
         <div>
           <label
@@ -91,7 +93,7 @@ const ContactForm = ({info, setInfo, handleSubmit}) => {
           <input
             type='tel'
             id='phone'
-            name="phone"
+            name='phone'
             className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-slate-500 focus:border-slate-500 block w-full p-2.5'
             placeholder='+90 (555)-555-5555'
             value={info.phone}
@@ -105,7 +107,7 @@ const ContactForm = ({info, setInfo, handleSubmit}) => {
           type='submit'
           className='text-white bg-slate-300 hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-slate-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center my-3'
         >
-          Save
+          {info.id ? 'Update' : 'Save'}
         </button>
       </div>
     </form>

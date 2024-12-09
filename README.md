@@ -32,7 +32,7 @@ Contact App is a modern contact management application built with React. It allo
 
 bash
 # Clone the repository
-git clone https://github.com/yourusername/contact-app.git
+git clone https://github.com/caneryesiltas/contact-app.git
 
 # Navigate to project directory 
 cd contact-app

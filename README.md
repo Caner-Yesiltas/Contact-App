@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+<div align="center">
+  <h2>
+    👉 <a href="https://contact-app-bice-tau.vercel.app/">Live Demo</a> 👈
+  </h2>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="/assets/Contact-App.gif" alt="Contact App Demo" width="800"/>
+</div>
 
-## Available Scripts
+## 📌 About The Project
 
-In the project directory, you can run:
+Contact App is a modern contact management application built with React. It allows users to efficiently manage their contacts with a user-friendly interface. Users can add new contacts, update existing ones, and delete contacts as needed. The app utilizes local storage to persist contact data across sessions.
 
-### `yarn start`
+### ✨ Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ➕ Add new contacts with name, email, department, and phone number
+- ✏️ Update existing contact information
+- 🗑️ Delete contacts
+- 💾 Persist contact data using local storage
+- 📱 Fully responsive design
+- 💅 Sleek and intuitive user interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛠️ Built With
 
-### `yarn test`
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [react-input-mask](https://github.com/sanniassin/react-input-mask)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Getting Started
 
-### `yarn build`
+bash
+# Clone the repository
+git clone https://github.com/yourusername/contact-app.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Navigate to project directory 
+cd contact-app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start the development server
+npm start
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 💻 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+src/
+├── components/
+│   ├── ContactForm/     # Contact form component
+│   └── ContactList/     # Contact list component  
+├── pages/
+│   └── Home/            # Home page component
+├── styles/
+│   └── App.css          # Main styling
+├── App.js               # Main application component
+└── index.js             # Entry point
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔍 Core Functionality
 
-## Learn More
+- **Contact Creation**: Users can create new contacts with name, email, department, and phone number
+- **Contact Updating**: Existing contacts can be updated with new information
+- **Contact Deletion**: Contacts can be deleted from the list
+- **Data Persistence**: Contact data is stored in the browser's local storage
+- **Responsive Design**: The app is fully responsive and works on all screen sizes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Component Details
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### ContactForm Component
+- Handles contact creation and updating
+- Uses controlled form inputs
+- Implements input validation with react-input-mask
 
-### Code Splitting
+### ContactList Component  
+- Displays the list of contacts
+- Allows deleting contacts
+- Enables editing contacts by sending contact data back to the form
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Home Component
+- Main page layout
+- Combines ContactForm and ContactList components
 
-### Analyzing the Bundle Size
+## 📱 Responsive Design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Fluid layout for all screen sizes
+- Optimized for mobile devices
+- Adaptive contact cards
+- Flexible form layout
 
-### Making a Progressive Web App
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Advanced Configuration
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Distributed under the MIT License. See LICENSE for more information.
 
-### Deployment
+## 📫 Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Caner Yesiltas - caneryesiltas1@gmail.com
 
-### `yarn build` fails to minify
+Project Link: [https://contact-app-bice-tau.vercel.app/](https://contact-app-bice-tau.vercel.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+<div align="center">
+  Made with ❤️ by Caner Yesiltas
+</div>

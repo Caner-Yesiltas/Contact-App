@@ -45,7 +45,7 @@ npm start
 
 
 ## 💻 Project Structure
-
+ ```
 src/
 ├── components/
 │   ├── ContactForm/   # Contact form component
@@ -56,7 +56,7 @@ src/
 │   └── App.css        # Main styling
 ├── App.js             # Main application component
 └── index.js           # Entry point
-
+ ```
 
 ## 🔍 Core Functionality
 

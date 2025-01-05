@@ -43,7 +43,7 @@ const ContactList = ({ contacts, handleDelete, id, setInfo }) => {
                   <FontAwesomeIcon
                     icon={faPenNib}
                     className='text-2xl text-blue-300 pr-3 cursor-pointer'
-                    onClick={()=> setInfo(item)} //ContactList'teki bir öğeye tıklanınca, o öğenin verilerini setInfo ile ContactForm'a göndererek formu güncelledim.
+                    onClick={()=> setInfo(item)} 
 
                   />
                   <FontAwesomeIcon

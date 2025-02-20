@@ -113,5 +113,5 @@ Project Link: [https://contact-app-bice-tau.vercel.app/](https://contact-app-bic
 ---
 
 <div align="center">
-  Made with ❤️ by Caner Yesiltas
+  Made with 📞 by Caner Yesiltas
 </div>
